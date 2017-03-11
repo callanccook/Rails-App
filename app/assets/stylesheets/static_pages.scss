@@ -1,3 +1,59 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	font-family: Cutive, Georgia, serif;
+	text-align: center;
+	color: #844784;
+	margin: 100px;
+	font-weight: 800;
+	word-spacing: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.navbar {
+	background-color: #c4f0ff;
+}
+
+.navbar-default .navbar-nav {
+	margin-left: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	padding-left: 20px;
+	font-family: Roboto, Futura, sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #22adb7;
+}
+
+.navbar-default .navbar-form {
+	float: right !important;
+}
+
+.navbar-right {
+	float: left !important;
+}
+
+.navbar-brand, .navbar-default .navbar-brand:hover {
+	font-size: 1.75em;
+	font-family: Roboto, Futura, sans-serif;
+	color: #22adb7;
+}
+
+.site-footer, .page-wrap:after {
+  height: 50px; 
+}
+
+.site-footer {
+  background: #c4f0ff;
+  font-family: Roboto, Futura, sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 100px;
+}
+
