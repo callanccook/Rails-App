@@ -8,6 +8,10 @@ body {
 
 // begin navbar
 
+.navbar {
+	background-color: white;
+}
+
 .navbar-header, .navbar-header>a {
 	font-size: 1.8em;
 	font-family: Clicker Script, Roboto, Futura, sans-serif;
@@ -65,7 +69,10 @@ p {
 
 .flexcontainer {
 	height: 500px;
-	margin: 5px;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-top: 100px;
+	margin-bottom: 300px;
 }
 
 .cake-image {
@@ -78,6 +85,10 @@ p {
 
 // end index page
 // begin contact page
+
+.contact {
+	padding-bottom: 100px;
+}
 
 .phone , .email , .address {
 	text-align: right;
@@ -109,16 +120,25 @@ h2 {
 }
 
 // end product page
+// begin about page
+
+.about {
+	margin-bottom: 300px;
+}
+
+// end about page
 //begin footer
 
-.site-footer {
-  height: 100px; 
-  margin-bottom: -20px;
-  background-color: #d0e4ea;  
-  font-family: Roboto, Futura, sans-serif;
-  padding-left: 20px;
-  padding-top: 20px;
-  margin-top: 200px;
+
+footer {
+	position: absolute;
+	width: 100%;
+	margin-bottom: 0px;
+	height: 100px;
+	background-color: #90c0cb;
+	color: #6b7a7c;
+	padding-top: 25px;
+	padding-left: 20px;
 }
 
 
