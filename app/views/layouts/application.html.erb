@@ -25,22 +25,22 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Callan's Cakes</a>
+		      <a class="navbar-brand" href="static_pages/index">Callan's Cakes</a>
 		    </div><!-- /.navbar-header -->
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <!-- took out bootstrap ul here -->
-		      <form class="navbar-form navbar-left">
+		      <!-- <form class="navbar-form navbar-left">
 		        <div class="form-group">
 		          <input type="text" class="form-control" placeholder="Search">
-		        </div> <!-- /.form-group -->
-		        <button type="submit" class="btn btn-default">Submit</button>
-		      </form>
+		        </div> <! /.form-group -->
+		       <!--  <button type="submit" class="btn btn-default">Go</button>
+		      </form> --> 
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="../static_pages/about.html.erb">Products</a></li>
-		        <li><a href="#">About</a></li>
-		        <li><a href="#">Contact</a></li>
-		        <li class="dropdown">
+		        <li><a href="static_pages/products">Products</a></li>
+		        <li><a href="static_pages/about">About</a></li>
+		        <li><a href="static_pages/contact">Contact</a></li>
+		        <!-- <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
 		            <li><a href="#">Action</a></li>
@@ -49,15 +49,16 @@
 		            <li role="separator" class="divider"></li>
 		            <li><a href="#">Separated link</a></li>
 		          </ul>
-		        </li>
+		        </li> -->
 		      </ul>
 		    </div><!-- /.collapse  /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+		
 
   	<%= yield %>
     
-  	<footer class="site-footer">`
+  	<footer class="site-footer">
       &copy; 2017 Callan Cook 
     </footer>
   </body>

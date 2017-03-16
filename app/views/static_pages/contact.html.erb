@@ -1,5 +1,55 @@
-<h1>Contact Callan</h1>
-<h3>Please feel free to contact me anytime!</h3>
-<p>Address: 8131 Highway 54<br>Sharpsburg, Georgia 30277</br></p>
-<p>Phone: 770.241.8120</p>
-<p>Email: callan.c.cook@gmail.com</p>
+
+<div class="contact">
+  <div class="header">
+    <h1>Contact Callan</h1>
+  </div>
+  <!-- end header --> 
+  <div class="info">
+	  <div class="email">
+	    <p><span class="glyphicon glyphicon-envelope"></span>callan.c.cook@gmail.com</p>
+	  </div>
+	  <!-- end email -->
+	  <div class="address">
+	    <p><span class="glyphicon glyphicon-home"></span>8131 Highway 54<br>Sharpsburg, GA<br>30277</p>
+	  </div>
+	  <!-- end address -->
+	  <div class="phone">
+	    <p><span class="glyphicon glyphicon-phone"></span>770.241.8120</p>
+	  </div>
+	  <!-- end phone -->
+  </div>
+  <!-- end info -->
+</div>
+<!-- end contact -->
+<div class="contact col-lg-8 col-md-8" id="contact2">
+  <form id="contact" name=”login”>
+    <div class="form-group">
+      <label for="name">Name*</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Please enter your name" required="required" title="enter your name">
+      <p id="visible-name"></p>
+    </div>
+    <!-- end form-group -->
+    <div class="form-group">
+      <label for="email">Email Address*</label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Please enter your email" required="required" title="enter your email address">
+      <p id="visible-email"></p>
+    </div>
+    <!-- end form-group -->
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" class="form-control" id="phone" placeholder="Please enter your phone number (optional)" title="enter your phone number">
+      <p id="visible-phone"></p>
+    </div>
+    <!-- end form-group -->
+  </form>
+        <!-- end form -->
+  <form id="textarea" action="/login" method="post" name="login">
+    <label for="message">Message*</label>
+     <textarea style="resize:none" cols="40" rows="5" class="form-control message-box" placeholder="Your message here" required="required" id="message"></textarea>
+     <p id="visible-comment"></p>
+     <p id="char-count"></p>
+     <button type="submit" class="btn btn-success submit" id="button">Submit</button>
+  </form>
+  <!-- end form -->
+</div>
+ <!-- end contact #contact2 -->

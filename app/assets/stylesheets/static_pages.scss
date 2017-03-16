@@ -2,19 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	background-color: #bae5f4;
+	}
+
 h1 {
 	font-family: Cutive, Georgia, serif;
 	text-align: center;
 	color: #844784;
 	margin: 100px;
-	font-weight: 800;
+	font-weight: 600;
 	word-spacing: 0.5em;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 0em;
+	font-size: 2em;
 }
 
 .navbar {
-	background-color: #c4f0ff;
+	background-color: white;
+	border-color: gray;
 }
 
 .navbar-default .navbar-nav {
@@ -23,7 +29,6 @@ h1 {
 
 .navbar-default .navbar-nav>li>a {
 	text-transform: uppercase;
-	padding-left: 20px;
 	font-family: Roboto, Futura, sans-serif;
 }
 
@@ -31,29 +36,94 @@ h1 {
 	color: #22adb7;
 }
 
-.navbar-default .navbar-form {
-	float: right !important;
+ul.navbar-right {
+	margin: 20px;
 }
 
-.navbar-right {
-	float: left !important;
+.navbar-default .navbar-brand {
+	font-size: 3em;
+	font-family: Roboto, Futura, sans-serif;
+	color: #844784;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-weight: 800;
 }
 
 .navbar-brand, .navbar-default .navbar-brand:hover {
-	font-size: 1.75em;
-	font-family: Roboto, Futura, sans-serif;
-	color: #22adb7;
-}
-
-.site-footer, .page-wrap:after {
-  height: 50px; 
+	color: #844784;
 }
 
 .site-footer {
-  background: #c4f0ff;
+  height: 100px; 
+  margin-bottom: 0px;
+}
+
+.site-footer {
+  background-color: #babcbc;
   font-family: Roboto, Futura, sans-serif;
   padding-left: 20px;
   padding-top: 20px;
   margin-top: 100px;
 }
+
+.flexcontainer {
+	height: 500px;
+}
+
+.cake-image {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 5px;
+	height: 100%;
+}
+
+p {
+	font-family: Roboto, Futura, sans-serif;
+	color: #844784;
+	margin-left: 20px;
+	text-align: left
+}
+
+h3 {
+	font-family: Roboto, Futura, sans-serif;
+	color: #844784;
+	margin-left: 20px;
+	text-align: left
+}
+
+.phone , .email , .address {
+	text-align: right;
+	font-size: 1.5em;
+}
+
+.info {
+	display: inline-block;
+}
+
+	#contact2 {
+    padding-top: 250px;
+    padding-left: 200px;
+}
+
+.form-control {
+    width: 80%;
+}
+
+label {
+	color: #844784;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
