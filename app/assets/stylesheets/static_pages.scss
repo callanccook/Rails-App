@@ -6,20 +6,17 @@ body {
 	background-color: white;
 	}
 
-h1 {
-	font-family: Cutive, Georgia, serif;
-	text-align: center;
-	color: #844784;
-	margin: 100px;
-	font-weight: 600;
-	word-spacing: 0.5em;
-	text-transform: uppercase;
-	letter-spacing: 0em;
-	font-size: 2em;
-}
+// begin navbar
 
-.navbar-header {
-	margin-left: 50px !important;
+.navbar-header, .navbar-header>a {
+	font-size: 1.8em;
+	font-family: Clicker Script, Roboto, Futura, sans-serif;
+	color: #844784;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-right: 40px;
+	font-weight: 800;
+	margin-left: 10px;
 }
 
 .navbar-default .navbar-nav {
@@ -39,29 +36,32 @@ ul.navbar-right {
 	margin: 20px;
 }
 
-.navbar-default .navbar-brand {
-	font-size: 3em;
-	font-family: Clicker Script, Roboto, Futura, sans-serif;
+
+// end navbar
+// begin h1, h2, h3, p
+
+.page-title {
+	font-family: Cutive, Georgia, serif;
+	text-align: center;
 	color: #844784;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-right: 40px;
-	font-weight: 800;
+	margin: 100px;
+	font-weight: 600;
+	word-spacing: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	font-size: 2em;
 }
 
-.navbar-brand, .navbar-default .navbar-brand:hover {
+p {
+	font-family: Roboto, Futura, sans-serif;
 	color: #844784;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
+	font-size: 1.2em;
 }
 
-.site-footer {
-  height: 100px; 
-  margin-bottom: -20px;
-  background-color: #d0e4ea;  
-  font-family: Roboto, Futura, sans-serif;
-  padding-left: 20px;
-  padding-top: 20px;
-  margin-top: 200px;
-}
+// begin index page
 
 .flexcontainer {
 	height: 500px;
@@ -76,20 +76,8 @@ ul.navbar-right {
 	margin-top: 100px;
 }
 
-p {
-	font-family: Roboto, Futura, sans-serif;
-	color: #844784;
-	margin-left: 100px;
-	margin-right: 100px;
-	text-align: left
-}
-
-h3 {
-	font-family: Roboto, Futura, sans-serif;
-	color: #844784;
-	margin-left: 20px;
-	text-align: left
-}
+// end index page
+// begin contact page
 
 .phone , .email , .address {
 	text-align: right;
@@ -102,21 +90,44 @@ h3 {
     align-items: center;
 }
 
-	#contact2 {
-    padding-top: 250px;
-    padding-left: 200px;
+// end contact page
+// begin product page
+
+.row {
+	margin-bottom: 50px;
+	padding: 100px;
 }
 
-.form-control {
-    width: 80%;
+.row>h2 {
+	text-align: center;
 }
 
-label {
+h2 {
+	font-family: Roboto, Futura, sans-serif;
 	color: #844784;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.cake-types {
+	border-radius: 150px;
+}
+
+// end product page
+//begin footer
+
+.site-footer {
+  height: 100px; 
+  margin-bottom: -20px;
+  background-color: #d0e4ea;  
+  font-family: Roboto, Futura, sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 200px;
 }
 
 
-
+// end footer
 
 
 

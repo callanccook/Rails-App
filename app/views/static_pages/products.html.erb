@@ -1,43 +1,41 @@
-<h1>Products</h1>
+<h1 class="page-title">Products</h1>
 
-<div class="container">
-	<div class="weddings">
-		<h3>Weddings</h3>
-				<img src="../assets/images/wedding2cake.jpg">
-	</div>
-	<div>
-		<h3>Birthdays</h3>
-		<img src="../assets/images/birthdaycake.jpg">
-	</div>
-	<div>
-		<h3>Cupcakes</h3>
-				<img src="../assets/images/cupcakes.jpg">
-	</div>
-	<div>
-		<h3>Square Cakes</h3>
-				<img src="../assets/images/squarecake.jpg">
-	</div>
-	<div>
-		<h3>Round Cakes</h3>
-				<img src="../assets/images/roundcake.jpg">
-	</div>
-</div>
+
 
 <div class="row">
-        <div class="col-md-4 col-xs-12">
-          <h2>Wedding</h2>
-          <img src="../assets/images/wedding2cake.jpg">
-        </div>
-        <!-- /col -->
-        <div class="col-md-4 col-xs-12">
-          <h2>Birthday</h2>
-            <img src="../assets/images/birthdaycake.jpg">
-        </div>
-        <!-- /col -->
-        <div class="col-md-4 col-xs-12">
-          <h2>Cupcakes</h2>
-          <img src="../assets/images/cupcakes.jpg">
-        </div>
-        <!-- /col -->
-      </div>
-      <!-- /row -->
+	<div class="col-md-4 col-xs-12">
+    <h2>Wedding</h2>
+    <%= image_tag("wedding2cake.jpg", height: '300', width: '300', class: "cake-types") %>
+  </div>
+  <!-- /col -->
+  <div class="col-md-4 col-xs-12">
+    <h2>Birthday</h2>
+    <%= image_tag("birthday2cake.jpg", height: '300', width: '300', class: "cake-types") %>
+  </div>
+  <!-- /col -->
+  <div class="col-md-4 col-xs-12">
+    <h2>Cupcakes</h2>
+    <%= image_tag("cupcakes.jpg", height: '300', width: '300', class: "cake-types") %>
+  </div>
+  <!-- /col -->
+</div>
+<!-- /row -->
+<div class="row">
+	<div class="col-md-4 col-xs-12">
+    <h2>Square</h2>
+    <%= image_tag("squarecake.jpg", height: '300', width: '300', class: "cake-types") %>
+  </div>
+  <!-- /col -->
+  <div class="col-md-4 col-xs-12">
+    <h2>Round</h2>
+    <%= image_tag("roundcake.jpg", height: '300', width: '300', class: "cake-types") %>
+  </div>
+  <!-- /col -->
+  <div class="col-md-4 col-xs-12">
+    <h2>Themed</h2>
+    <%= image_tag("r2d2cake.jpg", height: '300', width: '300', class: "cake-types") %>
+  </div>
+  <!-- /col -->
+</div>
+<!-- /row -->
+
