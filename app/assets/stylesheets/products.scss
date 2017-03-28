@@ -1,3 +1,32 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	font-family: Cutive, Georgia, serif;
+    text-align: center;
+    color: #844784;
+    margin: 100px;
+    font-weight: 600;
+    word-spacing: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    font-size: 2em;
+}
+
+th {
+	font-family: Roboto, Futura, sans-serif;
+    color: #844784;
+    margin: 20px;
+    padding: 10px;
+}
+
+body>a:hover {
+	background-color: white;
+	color: #22adb7;
+}
+
+footer {
+	margin-top: 100px;
+	width: 100%;
+}

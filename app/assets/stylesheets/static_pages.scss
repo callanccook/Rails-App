@@ -23,6 +23,10 @@ body {
 	margin-left: 10px;
 }
 
+.navbar-header>a:hover {
+	background-color: white;
+}
+
 .navbar-default .navbar-nav {
 	margin-left: 20px;
 }
@@ -69,18 +73,15 @@ p {
 
 .flexcontainer {
 	height: 500px;
-	margin-left: 20px;
-	margin-right: 0px;
-	margin-top: 100px;
+	margin-left: 100px;
+	margin-top: 200px;
 	margin-bottom: 300px;
 }
 
 .cake-image {
 	display: inline-block;
-	margin: 0 auto;
-	padding: 5px;
+	padding: 20px;
 	height: 75%;
-	margin-top: 100px;
 }
 
 // end index page
@@ -143,9 +144,6 @@ footer {
 
 
 // end footer
-
-
-
 
 
 

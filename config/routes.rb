@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   resources :products
-  get 'static_pages/about'
+  get 'static_pages/about' , :as => 'about_page'
 
-  get 'static_pages/contact'
-  get 'static_pages/products'
+  get 'static_pages/contact' , :as => 'contact_page'
+  get 'static_pages/products' , :as => 'products_page'
 
   get 'static_pages/index'
   root 'static_pages#index'
