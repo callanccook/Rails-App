@@ -72,17 +72,15 @@ p {
 // begin index page
 
 .flexcontainer {
-	height: 500px;
-	margin-left: 100px;
-	margin-top: 200px;
-	margin-bottom: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center; 
+	margin-bottom: 20px;
+	padding-top: 20px;
 }
 
-.cake-image {
-	display: inline-block;
-	padding: 20px;
-	height: 75%;
-}
+
 
 // end index page
 // begin contact page
@@ -100,6 +98,10 @@ p {
 	display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.address>p {
+	line-height: 25px;
 }
 
 // end contact page
@@ -130,6 +132,9 @@ h2 {
 // end about page
 //begin footer
 
+.footer {
+	width: 100% !important;
+}
 
 footer {
 	position: absolute;
