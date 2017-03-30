@@ -40,3 +40,34 @@ footer {
 	width: 100%;
 }
 
+
+.new_product {
+    margin-left: 100px;
+}
+
+.field>label {
+    color: #844784;
+    font-family: Roboto, Futura, sans-serif;
+}
+
+.field>input, .field>textarea {
+    border-style: double;
+    border-color: #bae5f4;
+    border-radius: 5px;
+}
+
+.actions>input {
+    background-color: #bae5f4;
+    border-color: #bae5f4;
+    border-radius: 5px;
+    color: gray;
+    border-style: double;
+}
+
+
+
+
+
+
+
+
