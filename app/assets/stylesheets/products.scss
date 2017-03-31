@@ -33,6 +33,7 @@ body>a:hover {
 
 body>a {
     margin-left: 110px;
+    color: #90c0cb;
 }
 
 footer {
@@ -62,6 +63,23 @@ footer {
     border-radius: 5px;
     color: gray;
     border-style: double;
+}
+
+.actions>input:hover {
+    background-color: #90c0cb;
+}
+
+td>a {
+    color: #90c0cb;
+}
+
+td>a:hover {
+    background-color: #fff;
+    color: #22adb7;
+}
+
+td {
+    color: gray;
 }
 
 
