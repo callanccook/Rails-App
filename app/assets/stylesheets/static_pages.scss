@@ -63,9 +63,6 @@ ul.navbar-right {
 p {
 	font-family: Roboto, Futura, sans-serif;
 	color: #844784;
-	margin-left: 100px;
-	margin-right: 100px;
-	text-align: left;
 	font-size: 1.2em;
 }
 
@@ -112,8 +109,8 @@ p {
 	padding: 100px;
 }
 
-h2 {
-	font-family: Roboto, Futura, sans-serif;
+h2, h3 {
+	font-family: Cutive, Georgia, serif;
 	color: #844784;
 	text-align: center;
 }
@@ -127,6 +124,8 @@ h2 {
 
 .about {
 	margin-bottom: 300px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 // end about page

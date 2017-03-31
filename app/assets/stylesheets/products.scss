@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 h1 {
 	font-family: Cutive, Georgia, serif;
     text-align: center;
@@ -82,10 +81,23 @@ td {
     color: gray;
 }
 
+.product-image {
+    border-radius: 100px;
+}
 
+.col-md-4 {
+    margin-bottom: 75px;
+}
 
+.edit_product {
+    margin-left: 100px;
+}
 
+a {
+    color: #90c0cb;
+}
 
-
-
+a:hover {
+    color: #1f99a4;
+}
 
