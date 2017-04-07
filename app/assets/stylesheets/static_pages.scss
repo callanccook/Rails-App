@@ -10,6 +10,7 @@ body {
 
 .navbar {
 	background-color: white;
+	margin-bottom: 0px;
 }
 
 .navbar-header, .navbar-header>a {
@@ -46,6 +47,25 @@ ul.navbar-right {
 
 
 // end navbar
+// begin carousel
+
+.carousel {
+	height: 600px;
+	margin-bottom: 400px;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.carousel-caption {
+	font-family: Roboto, Futura, sans-serif;
+	color: white;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+//end carousel
 // begin h1, h2, h3, p
 
 .page-title {
@@ -76,8 +96,6 @@ p {
 	margin-bottom: 20px;
 	padding-top: 20px;
 }
-
-
 
 // end index page
 // begin contact page
@@ -142,7 +160,6 @@ footer {
 	padding-top: 25px;
 	padding-left: 20px;
 }
-
 
 // end footer
 
