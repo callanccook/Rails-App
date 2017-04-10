@@ -5,7 +5,7 @@
 
 product_list = [
 	['Wedding', 'They can be elegant and traditional, or original.', 'http://bellethemagazine.com/wp-content/uploads/2016/04/winter-wedding-cake-3-200x200.jpg', 'White or Cream', 100],
-	['Birthday', 'Birthday cakes are one tier, rounded. Candles not included.', 'http://www.differentdream.com/wp-content/uploads/2009/09/Special-Needs-Billy-birthday-cake-200x200.jpg', 'Any color', 30],
+	['Birthday', 'Birthday cakes are one tier, rounded. Candles not included.', 'https://previews.123rf.com/images/belchonock/belchonock1510/belchonock151004195/47405030-Birthday-cake-with-candles-on-color-background-Stock-Photo-happy.jpg', 'Any color', 30],
 	['Cupcake', 'Sizes can be small, medium, or large. Price is by the half dozen.', 'http://www.glorioustreats.com/wp-content/uploads/2011/08/Pretty-colored-cupcakes-200x200.jpg', 'Any color', 6],
 	['Square', 'From one to four tiers, they can be centered or off-centered.', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYuOpq7sph1MFzxQy4SD036NLg-6sp-Ok_I3Ye5vq0_hf_HJiK', 'Any color', 75],
 	['Themed', 'Any theme and any shape.', 'https://cdn001.cakecentral.com/gallery/2016/07/200x200_star-wars-3-d-standing-r2d2-cake-990268VXLxq.jpg', 'Any color', 50],
