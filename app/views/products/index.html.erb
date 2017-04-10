@@ -7,8 +7,11 @@
 <!-- begin bootstrap grid -->
 <div class="container">
   <div class="row">
-      <%= render @products %>
-  </div>
+    <% @products.each do |product| %>
+      <%= render product %>
+    <% end %>
+    <!-- another option is < %= render partial: "product", collection: @products %> OR < %= render @products %>
+  </div> -->
   <!-- end row -->
 </div>
 <!-- end container -->
