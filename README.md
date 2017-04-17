@@ -1,3 +1,3 @@
 # README
 
-Lorem ipsum dolor sit amet, ei hinc ullum has. An dolore indoctum mel, no per odio dolore. Ius ex unum perpetua, id delenit indoctum sea. Cu mel alia comprehensam, ius detraxit delicata ei. Et option maiestatis eos. No eos idque alterum, vix ad utinam impetus accusam, ridens inermis pri ex. Vim nobis cotidieque cu, inani urbanitas cu vel.
+This is an app I made using Ruby on Rails. It is an e-commerce app called Callan's Cakes. I created it while enrolled in Career Foundry's Web Development course.
