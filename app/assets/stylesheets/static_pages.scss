@@ -4,7 +4,7 @@
 
 body {
 	background-color: white;
-	}
+}
 
 // begin navbar
 
@@ -111,8 +111,8 @@ p {
 
 .info {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .address>p {
@@ -150,16 +150,11 @@ h2, h3 {
 // end about page
 //begin footer
 
-
 footer {
-	position: absolute;
-	width: 100%;
-	margin-bottom: 0px;
-	height: 100px;
 	background-color: #90c0cb;
 	color: #6b7a7c;
-	padding-top: 25px;
-	padding-left: 20px;
+	height: 100px;
+  padding: 20px;
 }
 
 // end footer
