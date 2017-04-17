@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.limit(8)
+    @products = Product.limit(20)
   end
 
   # GET /products/1
@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to '/products' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
