@@ -28,11 +28,18 @@
 		      <a><%= link_to "Callan's Cakes", root_url %></a>
 		    </div><!-- /.navbar-header -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
+		      <ul class="nav navbar-nav navbar-left">
 		        <li><%= link_to 'Products', products_page_path %></li>
 		        <li><%= link_to 'About', about_page_path %></li>
 		        <li><%= link_to 'Contact', contact_page_path %></li>
 		      </ul>
+		      <!-- begin search form -->
+		    	<%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
+  					<%= label_tag(:q, "Search for:", class: "search-for") %>
+  					<%= text_field_tag(:q) %>
+  					<%= submit_tag("Search", class: "search-button") %>
+					<% end %>
+		    <!-- end search form -->
 		    </div><!-- /.collapse  /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>

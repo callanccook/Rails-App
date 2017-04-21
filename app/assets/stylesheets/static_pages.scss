@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-default .navbar-nav {
-	margin-left: 20px;
+	margin-top: 25px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -47,6 +47,31 @@ ul.navbar-right {
 
 
 // end navbar
+// begin search form
+
+.navbar-form {
+	text-transform: uppercase;
+	font-family: Roboto, Futura, sans-serif;
+	margin-top: 37px;
+}
+
+.search-for {
+	display: inline-block;
+	color: #808080;
+	font-size: 1em;
+}
+
+.search-button {
+	background-color: white;
+	border-color: #e4dfdf;
+	border-style: double;
+}
+
+.search-button:hover {
+	color: #22adb7;
+}
+
+// end search form
 // begin carousel
 
 .carousel {
