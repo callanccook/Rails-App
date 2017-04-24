@@ -4,6 +4,34 @@
     <h1 class="page-title">Contact Callan</h1>
   </div>
   <!-- end header --> 
+  <div class="contact-form">
+	  <%= flash[:notice] %>
+
+		<%= form_tag("/static_pages/thank_you") do %>
+		<div class="row">
+		  <div class="col-md-4">
+		    <div class="form-group">
+		      <%= label_tag :name %>
+		      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+		    </div>
+		    <!-- end form-group  -->     
+		    <div class="form-group">
+		      <%= label_tag :email, "Email Address" %>
+		      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+		    </div>
+		    <!-- end form-group  --> 
+		    <div class="form-group">
+		      <%= label_tag :message %>
+		      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+		    </div>
+		    <!-- end form-group  -->    
+		  </div>
+		  <!-- end col-md-4 -->
+		</div>
+		<%= submit_tag "Send" %>   
+		<% end %>
+	</div>
+	<!-- end contact-form -->
   <div class="info">
 	  <div class="email">
 	    <p><span class="glyphicon glyphicon-envelope"></span>callan.c.cook@gmail.com</p>
@@ -21,4 +49,5 @@
   <!-- end info -->
 </div>
 <!-- end contact -->
+
 
