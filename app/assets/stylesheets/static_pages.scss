@@ -126,23 +126,45 @@ p {
 // begin contact page
 
 .contact {
-	padding-bottom: 100px;
+	margin: 10px;
+}
+
+.contact-form>form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .phone , .email , .address {
-	text-align: right;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
-.info {
-	display: flex;
-  flex-direction: column;
-  align-items: center;
+.form-group {
+	width: 350px;
 }
 
-.address>p {
-	line-height: 25px;
+.contact-form>form>input {
+	background-color: #bae5f4;
+	border-color: #bae5f4;
+	border-radius: 5px;
+	color: gray;
+	border-style: double;
+	margin-right: 300px;
 }
+
+.form-group>label {
+	color: #844784;
+	font-family: Roboto, Futura, sans-serif;
+	font-size: 1.25em;
+}
+
+.form-control {
+	border-style: double;
+	border-color: #bae5f4;
+	border-radius: 5px;
+}
+
+
 
 // end contact page
 // begin product page
