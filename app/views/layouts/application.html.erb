@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body id="bootstrap-overrides">
 	  <nav class="navbar navbar-default navbar-static-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,7 +38,7 @@
 		      	<% if user_signed_in? %>
 		      		<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
 		      	<% else %>
-		      		<%= link_to('Login', new_user_session_path) %>
+		      		<%= link_to('Login', new_user_session_path, class: "login-button") %>
 		      	<% end %>
 		      	</li>
 		      </ul>

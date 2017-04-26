@@ -72,6 +72,11 @@ ul.navbar-right {
 }
 
 // end search form
+// begin login
+
+
+
+// end login
 // begin carousel
 
 .carousel {
@@ -81,6 +86,14 @@ ul.navbar-right {
 
 .carousel-control.right, .carousel-control.left {
 	background-image: none;
+}
+
+.carousel-control:hover {
+	opacity: 0.2;
+}
+
+.glyphicon-chevron-right:hover, .glyphicon-chevron-left:hover {
+	color: gray;
 }
 
 .carousel-caption {
@@ -141,6 +154,7 @@ p {
 
 .form-group {
 	width: 350px;
+	margin-top: 10px;
 }
 
 .contact-form>form>input {
@@ -162,6 +176,11 @@ p {
 	border-style: double;
 	border-color: #bae5f4;
 	border-radius: 5px;
+}
+
+textarea#message {
+	height: 150px;
+	width: 350px;
 }
 
 
@@ -198,7 +217,6 @@ h2, h3 {
 //begin footer
 
 footer {
-	background-color: #90c0cb;
 	color: #6b7a7c;
 	height: 100px;
   padding: 20px;
