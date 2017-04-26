@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :users
   resources :products
   get 'static_pages/about' , :as => 'about_page'
   get 'static_pages/contact' , :as => 'contact_page'
