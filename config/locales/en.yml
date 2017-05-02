@@ -20,4 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  unauthorized:
+      default: "Not allowed to manage other user accounts."
   hello: "Hello world"
+
+
