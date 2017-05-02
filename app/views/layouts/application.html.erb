@@ -9,6 +9,7 @@
     <!-- javascript links go here -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag "application.js", "data-turbolinks-track" => true %>
     <!-- fonts go here -->
     <link href="https://fonts.googleapis.com/css?family=Cutive|Roboto|Clicker+Script" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,11 +56,11 @@
 		</nav>
 
 		<% if notice %>
-			<p class="alert alert-info" role="alert"><%= notice %></p>
+			<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert"><%= notice %></p>
 		<% end %>
 
 		<% if alert %>
-    	<p class="alert alert-info" role="alert"><%= alert %></p>
+    	<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert"><%= alert %></p>
     <% end %>
 
   	<%= yield %>
