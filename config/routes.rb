@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'static_pages/contact' , :as => 'contact_page'
 
   get '/products', to: 'products#index' , :as => 'products_page'
+  get '/oders', to: 'orders#index' , :as => 'orders_page'
 
   get 'static_pages/index'
   root 'static_pages#landing_page'

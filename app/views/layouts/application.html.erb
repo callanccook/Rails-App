@@ -9,6 +9,7 @@
     <!-- javascript links go here -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag "application.js", "data-turbolinks-track" => true %>
     <!-- fonts go here -->
     <link href="https://fonts.googleapis.com/css?family=Cutive|Roboto|Clicker+Script" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,6 +33,7 @@
 		        <li><%= link_to 'Products', products_page_path %></li>
 		        <li><%= link_to 'About', about_page_path %></li>
 		        <li><%= link_to 'Contact', contact_page_path %></li>
+		        <li><%= link_to 'Orders', orders_page_path %></li>
 		      </ul>
 		      <ul class="nav pull-right">
 		      	<li>
@@ -53,8 +55,13 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+		<% if notice %>
+			<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert"><%= notice %></p>
+		<% end %>
+
+		<% if alert %>
+    	<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert"><%= alert %></p>
+    <% end %>
 
   	<%= yield %>
 
