@@ -78,6 +78,9 @@ ul.navbar-right {
 
 // end login
 // begin carousel
+#carousel-example-generic {
+	margin: -33px;
+}
 
 .carousel {
 	height: 600px;
@@ -219,7 +222,7 @@ h2, h3 {
 footer {
 	color: #6b7a7c;
 	height: 100px;
-  padding: 20px;
+  padding-top: 300px;
 }
 
 // end footer
