@@ -16,6 +16,20 @@ h1 {
   font-size: 2em;
 }
 
+h3 {
+  font-family: Cutive, Georgia, serif;
+  color: #844784;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+#product-show {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
 th {
 	font-family: Roboto, Futura, sans-serif;
   color: #844784;
@@ -79,7 +93,6 @@ td {
 }
 
 .product-image {
-  border-radius: 40px;
   width: 100%;
   height: 150px; 
 }
@@ -104,6 +117,12 @@ a:hover {
 .description {
   height: 75px;
   overflow: auto;
+}
+
+#product-name {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
 }
 
 footer {
