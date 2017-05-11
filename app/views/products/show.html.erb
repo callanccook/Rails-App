@@ -19,27 +19,25 @@
         <strong>Price:</strong>
         <%= @product.price %>
       </p>
+
       <% if @product.comments.exists? %>
         <p>
           <strong>Average Rating:</strong>
-          <%= @product.average_rating %>
-          <!-- <span class="glyphicon glyphicon-star" aria-hidden="true"></span> -->
-        </p>
-        <p>
-          <strong>Review:</strong>
-          <%= @product.highest_rating_comment.body %>
+          <div class="rated" data-score="<%= @product.average_rating %>"></div>
         </p>
       <% else %>
         <p>This product has not yet been rated.</p>
       <% end %>
     </div><!-- end col-md-4 -->
 
-    <div class="col-md-8">
+    <div class="col-md-6" id="product-image-show">
        <%= image_tag(@product.image_url, class:'img-responsive img-rounded') %>
     </div><!-- end col-md-8 -->
   </div><!-- end row -->
 
   <%= render 'new_comment' %>
+  <%= render 'comments' %>
+
 
   <div class="row">
     <%= link_to 'Edit', edit_product_path(@product) %> |
