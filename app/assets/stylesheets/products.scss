@@ -24,9 +24,26 @@ h3 {
   font-size: 2em;
 }
 
+h3#product-name {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
 #product-show {
   padding-top: 30px;
   padding-bottom: 0px;
+}
+
+#product-show p {
+  margin-left: 0px;
+}
+
+strong#product-show {
+  font-weight: bold;
+}
+
+.average-rating {
+  margin: 0px;
 }
 
 th {
@@ -122,6 +139,12 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   padding-left: 30px;
+}
+
+#edit-back {
+  padding: 10px 0px;
+  font-family: Roboto, Futura, sans-serif;
+  font-size: 1.2em;
 }
 
 // #product-image-show {
