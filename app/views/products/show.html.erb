@@ -21,7 +21,7 @@
       </p>
 
       <% if @product.comments.exists? %>
-        <p>
+        <p class="average-rating">
           <strong>Average Rating:</strong>
           <div class="rated" data-score="<%= @product.average_rating %>"></div>
         </p>
@@ -35,11 +35,15 @@
     </div><!-- end col-md-8 -->
   </div><!-- end row -->
 
+  
   <%= render 'new_comment' %>
   <%= render 'comments' %>
-
-
-  <div class="row">
+ 
+  
+  
+    <%= will_paginate @comments, class: "pagination" %>
+  
+  <div class="row" id="edit-back">
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
   </div>

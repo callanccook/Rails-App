@@ -15,8 +15,12 @@ h4 {
 	padding: 0px;
 }
 
-.rated, .rating {
-	padding-left: 30px;
+#previous-comments>p {
+  margin: 10px 0px;
+}
+
+.rated {
+  padding: 10px 0px;
 }
 
 #comment_body {
@@ -27,3 +31,55 @@ h4 {
 #new_comment>p {
 	margin-bottom: 0px;
 }
+
+.pagination {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a, 
+.pagination em {
+  font-size: 1.2em;
+  font-family: Roboto, Futura, sans-serif;
+  color: #abd2e1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #abd2e1;
+  border-right: hidden;
+}
+
+.pagination a:hover {
+  color: #abd2e1;
+  background-color: #ececec;
+  text-decoration: none;
+}
+
+.pagination em {
+  color: #0b5f6a;
+  border: 2px solid #0b5f6a;
+}
+
+a.next_page {
+  border-right: 2px solid #abd2e1;
+}
+
+span.next_page, 
+span.previous_page {
+  color: #abd2e1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #abd2e1;
+  border-right: hidden;
+}
+
+span.next_page {
+  border-right: 2px solid #abd2e1;
+}
+
+
+
