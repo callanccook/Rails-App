@@ -1,0 +1,650 @@
+/* line 5, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+h4 {
+  font-family: Cutive, Georgia, serif;
+  color: #844784;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-size: 1.5em;
+  margin-left: 30px;
+}
+
+/* line 14, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+#previous-comments {
+  padding: 0px;
+}
+
+/* line 18, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+#previous-comments > p {
+  margin: 10px 0px;
+}
+
+/* line 22, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+.rated {
+  padding: 10px 0px;
+}
+
+/* line 26, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+#comment_body {
+  height: 100px;
+  width: 225px;
+}
+
+/* line 31, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+#new_comment > p {
+  margin-bottom: 0px;
+}
+
+/* line 35, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+.pagination {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 41, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+.pagination a,
+.pagination em {
+  font-size: 1.2em;
+  font-family: Roboto, Futura, sans-serif;
+  color: #abd2e1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #abd2e1;
+  border-right: hidden;
+}
+
+/* line 54, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+.pagination a:hover {
+  color: #abd2e1;
+  background-color: #ececec;
+  text-decoration: none;
+}
+
+/* line 60, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+.pagination em {
+  color: #0b5f6a;
+  border: 2px solid #0b5f6a;
+}
+
+/* line 65, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+a.next_page {
+  border-right: 2px solid #abd2e1;
+}
+
+/* line 69, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+span.next_page,
+span.previous_page {
+  color: #abd2e1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #abd2e1;
+  border-right: hidden;
+}
+
+/* line 80, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/comments.scss */
+span.next_page {
+  border-right: 2px solid #abd2e1;
+}
+/* line 7, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+h1 {
+  font-family: Cutive, Georgia, serif;
+  text-align: center;
+  color: #844784;
+  margin: 100px;
+  font-weight: 600;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  font-size: 2em;
+}
+
+/* line 19, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+h3 {
+  font-family: Cutive, Georgia, serif;
+  color: #844784;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-size: 2em;
+}
+
+/* line 27, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+h3#product-name {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+/* line 32, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+#product-show {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+/* line 37, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+#product-show p {
+  margin-left: 0px;
+}
+
+/* line 41, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+strong#product-show {
+  font-weight: bold;
+}
+
+/* line 45, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.average-rating {
+  margin: 0px;
+}
+
+/* line 49, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+th {
+  font-family: Roboto, Futura, sans-serif;
+  color: #844784;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* line 56, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+table {
+  margin-left: 100px;
+}
+
+/* line 60, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+body > a:hover {
+  background-color: white;
+  color: #22adb7;
+}
+
+/* line 65, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+body > a {
+  margin-left: 110px;
+  color: #90c0cb;
+}
+
+/* line 71, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.new_product {
+  margin-left: 100px;
+}
+
+/* line 75, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.field > label {
+  color: #844784;
+  font-family: Roboto, Futura, sans-serif;
+}
+
+/* line 80, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.field > input, .field > textarea {
+  border-style: double;
+  border-color: #bae5f4;
+  border-radius: 5px;
+}
+
+/* line 86, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.actions > input {
+  background-color: #bae5f4;
+  border-color: #bae5f4;
+  border-radius: 5px;
+  color: gray;
+  border-style: double;
+}
+
+/* line 94, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.actions > input:hover {
+  background-color: #90c0cb;
+}
+
+/* line 98, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+td > a {
+  color: #90c0cb;
+}
+
+/* line 102, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+td > a:hover {
+  background-color: #fff;
+  color: #22adb7;
+}
+
+/* line 107, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+td {
+  color: gray;
+}
+
+/* line 111, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.product-image {
+  width: 100%;
+  height: 150px;
+}
+
+/* line 117, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.col-md-4 {
+  margin-bottom: 75px;
+}
+
+/* line 121, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.edit_product {
+  margin-left: 100px;
+}
+
+/* line 125, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+a {
+  color: #90c0cb;
+}
+
+/* line 129, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+a:hover {
+  color: #1f99a4;
+}
+
+/* line 133, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+.description {
+  height: 75px;
+  overflow: auto;
+}
+
+/* line 138, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+#product-name {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+/* line 144, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+#edit-back {
+  padding: 10px 0px;
+  font-family: Roboto, Futura, sans-serif;
+  font-size: 1.2em;
+}
+
+/* line 155, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/products.scss */
+footer {
+  margin-top: 100px;
+}
+/* line 1, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 25, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 29, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 36, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 41, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 45, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 51, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 59, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 70, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 76, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: white;
+}
+
+/* line 11, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+/* line 16, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.navbar-header, .navbar-header > a {
+  font-size: 1.8em;
+  font-family: Clicker Script, Roboto, Futura, sans-serif;
+  color: #844784;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+/* line 27, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.navbar-header > a:hover {
+  background-color: white;
+}
+
+/* line 31, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav {
+  margin-top: 25px;
+}
+
+/* line 35, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  font-family: Roboto, Futura, sans-serif;
+}
+
+/* line 40, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #22adb7;
+}
+
+/* line 44, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+ul.navbar-right {
+  margin: 20px;
+}
+
+/* line 52, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.navbar-form {
+  text-transform: uppercase;
+  font-family: Roboto, Futura, sans-serif;
+  margin-top: 37px;
+}
+
+/* line 58, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.search-for {
+  display: inline-block;
+  color: #808080;
+  font-size: 1em;
+}
+
+/* line 64, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.search-button {
+  background-color: white;
+  border-color: #e4dfdf;
+  border-style: double;
+}
+
+/* line 70, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.search-button:hover {
+  color: #22adb7;
+}
+
+/* line 81, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+#carousel-example-generic {
+  margin: -33px;
+}
+
+/* line 85, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.carousel {
+  height: 600px;
+  margin-bottom: 400px;
+}
+
+/* line 90, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+/* line 94, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.carousel-control:hover {
+  opacity: 0.2;
+}
+
+/* line 98, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.glyphicon-chevron-right:hover, .glyphicon-chevron-left:hover {
+  color: gray;
+}
+
+/* line 102, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  font-family: Roboto, Futura, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+/* line 112, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.page-title {
+  font-family: Cutive, Georgia, serif;
+  text-align: center;
+  color: #844784;
+  margin: 100px;
+  font-weight: 600;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  font-size: 2em;
+}
+
+/* line 124, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: Roboto, Futura, sans-serif;
+  color: #844784;
+  font-size: 1.2em;
+}
+
+/* line 132, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* line 144, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.contact {
+  margin: 10px;
+}
+
+/* line 148, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.contact-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 154, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.phone, .email, .address {
+  font-size: 1.25em;
+}
+
+/* line 158, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.form-group {
+  width: 350px;
+  margin-top: 10px;
+}
+
+/* line 163, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.contact-form > form > input {
+  background-color: #bae5f4;
+  border-color: #bae5f4;
+  border-radius: 5px;
+  color: gray;
+  border-style: double;
+  margin-right: 300px;
+}
+
+/* line 172, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.form-group > label {
+  color: #844784;
+  font-family: Roboto, Futura, sans-serif;
+  font-size: 1.25em;
+}
+
+/* line 178, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  border-style: double;
+  border-color: #bae5f4;
+  border-radius: 5px;
+}
+
+/* line 184, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+textarea#message {
+  height: 150px;
+  width: 350px;
+}
+
+/* line 194, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.row {
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 200, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+h2, h3 {
+  font-family: Cutive, Georgia, serif;
+  color: #844784;
+  text-align: center;
+}
+
+/* line 206, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.cake-types {
+  border-radius: 150px;
+}
+
+/* line 213, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+.about {
+  margin-bottom: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* line 222, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/static_pages.scss */
+footer {
+  color: #6b7a7c;
+  height: 100px;
+  padding-top: 300px;
+}
+/* line 5, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+.login-button {
+  text-transform: uppercase;
+  font-family: Roboto, Futura, sans-serif;
+  color: #777;
+}
+
+/* line 11, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+#bootstrap-overrides .login-button:hover {
+  color: #22adb7;
+  background-color: #fff;
+}
+
+/* line 18, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+#login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* line 26, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+input#user_email, input#user_password, input#user_password_confirmation {
+  height: 30px;
+  width: 250px;
+}
+
+/* line 34, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+#sign-up-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* line 42, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+#sign-up-form .field {
+  margin-top: 20px;
+}
+
+/* line 46, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+.field > label {
+  margin-top: 30px;
+  font-size: 1.15em;
+}
+
+/* line 51, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+.field > em {
+  color: #844784;
+  font-family: Roboto, Futura, sans-serif;
+}
+
+/* line 59, /Users/callancook/Programming/Rails-App/app/assets/stylesheets/users.scss */
+#forgot-your-password-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
