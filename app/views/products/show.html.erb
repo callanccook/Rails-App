@@ -38,7 +38,7 @@
   
   <%= render 'new_comment' %>
   <%= render 'comments' %>
- 
+  <%= javascript_include_tag 'ratyrate.js', "data-turbolinks-track" => false %>
   
   
     <%= will_paginate @comments, class: "pagination" %>
