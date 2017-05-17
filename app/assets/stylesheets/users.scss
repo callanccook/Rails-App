@@ -2,13 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.login-button {
+.login-button, 
+.logout-button {
 	text-transform: uppercase;
 	font-family: Roboto, Futura, sans-serif;
 	color: #777;
 }
 
-#bootstrap-overrides .login-button:hover {
+#bootstrap-overrides .login-button:hover, 
+#bootstrap-overrides .logout-button:hover {
 	color: #22adb7;
 	background-color: #fff; 
 }
@@ -23,7 +25,9 @@
 	margin-top: 50px;
 }
 
-input#user_email, input#user_password, input#user_password_confirmation {
+input#user_email, 
+input#user_password, 
+input#user_password_confirmation {
 	height: 30px;
 	width: 250px;
 }
