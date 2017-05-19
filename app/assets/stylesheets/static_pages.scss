@@ -209,9 +209,13 @@ h2, h3 {
 // begin about page
 
 .about {
-	margin-bottom: 300px;
 	margin-left: 100px;
 	margin-right: 100px;
+}
+
+.about p {
+	text-align: center;
+	padding: 0px 50px;
 }
 
 // end about page

@@ -8,8 +8,8 @@ h1 {
 	font-family: Cutive, Georgia, serif;
   text-align: center;
   color: #844784;
-  margin: 100px;
-  font-weight: 600;
+  margin: 10px;
+  font-weight: 400;
   word-spacing: 0.5em;
   text-transform: uppercase;
   letter-spacing: 0em;
@@ -29,6 +29,16 @@ h3#product-name {
   margin-top: 0px;
 }
 
+a.product-name {
+  color: #844784;
+  font-weight: 500;
+}
+
+a.product-name:hover {
+  color: #844784;
+  text-decoration: underline;
+}
+
 #product-show {
   padding-top: 30px;
   padding-bottom: 0px;
@@ -44,6 +54,11 @@ strong#product-show {
 
 .average-rating {
   margin: 0px;
+}
+
+.product-information p {
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 th {
@@ -146,11 +161,6 @@ a:hover {
   font-family: Roboto, Futura, sans-serif;
   font-size: 1.2em;
 }
-
-// #product-image-show {
-//   height: 100px;
-//   width: 100px;
-// }
 
 footer {
   margin-top: 100px;
