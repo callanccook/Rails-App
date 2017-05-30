@@ -3,21 +3,16 @@ require 'rails_helper'
 describe UsersController, type: :controller do
 	
 	before do
-		@user = User.create!(first_name: "Callan", last_name: "Cook", email: "email@email.com", password: "password")
-		puts "We made a user!"
-		puts @user
+		@user = FactoryGirl.create(:user)
+		# @user = User.create!(first_name: "Callan", last_name: "Cook", email: "email@email.com", password: "password")
 		@user2 = User.create!(first_name: "Bentley", last_name: "Sherwood", email: "email2@email.com", password: "password")
-		puts "We made a second user!"
-		puts @user2
 	end 
 
 	describe "GET #show" do 
 
 		context "User is logged in" do
 			before do
-				puts "We are about to sign in!"
 				sign_in @user
-				puts "We signed in!"
 			end
 			it "loads correct user details" do
 				get :show, id: @user.id

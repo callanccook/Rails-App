@@ -23,3 +23,14 @@ module Nameofapp
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+# Generators for factories will automatically substitute fixture (and maybe any other fixture_replacement you set). 
+# If you want to disable this feature, add the following to your application.rb file:
+# config.generators do |g|
+  # g.factory_girl false
+# end
+
+# Default factories directory is test/factories, or spec/factories if test_framework generator is set to :rspec; change this behavior with:
+# config.generators do |g|
+  # g.factory_girl dir: 'custom/dir/for/factories'
+# end
