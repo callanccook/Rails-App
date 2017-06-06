@@ -15,7 +15,7 @@
       </p>
       <p>
         <strong>Price:</strong>
-        <%= @product.price %>
+        <%= number_to_currency(@product.price) %>
       </p>
 
 
@@ -27,7 +27,12 @@
       <% else %>
         <p>This product has not yet been rated.</p>
       <% end %>
+
+      <%= form_tag "/payments/create" do %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
     </div><!-- end col-md-4 -->
+
 
     <div class="col-md-6" id="product-image-show">
        <%= image_tag(@product.image_url, class:'img-responsive img-rounded') %>

@@ -38,6 +38,8 @@ gem 'devise'
 gem 'cancancan', '~> 1.10'
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.1.1'
+# gem 'stripe' used for Stripe payment method (version 2.11)
+gem 'stripe'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
