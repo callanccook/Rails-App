@@ -28,6 +28,10 @@ body {
 	background-color: white;
 }
 
+.navbar-default {
+	border: none;
+}
+
 .navbar-default .navbar-nav {
 	margin-top: 25px;
 }
@@ -74,10 +78,33 @@ ul.navbar-right {
 // end search form
 
 // login/logout found in users.scss
+// begin notice/alert 
+
+.closebtn {
+  margin-left: 15px;
+  color: #31708f;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: #173442;
+}
+
+p.alert {
+	padding-bottom: 20px;
+}
+
+// end notice/alert
 
 // begin carousel
 #carousel-example-generic {
 	margin: -33px;
+	padding-top: 25px;
 }
 
 .carousel {

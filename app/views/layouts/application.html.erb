@@ -56,11 +56,17 @@
 		</nav>
 
 		<% if notice %>
-			<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert"><%= notice %></p>
+			<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert">
+				<%= notice %>
+				<span class="closebtn">&times;</span>
+			</p>
 		<% end %>
 
 		<% if alert %>
-    	<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert"><%= alert %></p>
+    	<p class="alert alert-info alert-dismissible" role="alert" data-dismiss="alert">
+    		<%= alert %>
+    		<span class="closebtn">&times;</span>
+    	</p>
     <% end %>
 
   	<%= yield %>
