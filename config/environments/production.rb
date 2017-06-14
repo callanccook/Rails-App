@@ -79,6 +79,9 @@ Rails.application.configure do
   # rating stars code
   config.serve_static_assets = true
 
+  # forcing SSL connection for added security 
+  config.force_ssl = true
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter

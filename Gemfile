@@ -40,6 +40,8 @@ gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.1'
 # gem 'stripe' used for Stripe payment method (version 2.11)
 gem 'stripe'
+# gem brakeman a Rails security scanner
+gem 'brakeman', '~> 3.6', '>= 3.6.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
