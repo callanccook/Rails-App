@@ -22,7 +22,7 @@
       <% if @comments.exists? %>
         <p class="average-rating">
           <strong>Average Rating:</strong>
-          <div class="rated" data-score="<%= @product.average_rating %>"></div>
+          <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
         </p>
       <% else %>
         <p>This product has not yet been rated.</p>
