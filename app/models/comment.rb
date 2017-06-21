@@ -10,5 +10,5 @@ class Comment < ApplicationRecord
   scope :rating_desc, -> { order(rating: :desc) }
 
   # will_paginate
-  self.per_page = 3
+  self.per_page = 4
 end
