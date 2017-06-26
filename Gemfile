@@ -42,6 +42,8 @@ gem 'will_paginate', '~> 3.1.1'
 gem 'stripe'
 # gem brakeman a Rails security scanner
 gem 'brakeman', '~> 3.6', '>= 3.6.2'
+# gem dalli for chache
+gem 'dalli'
 
 
 group :development, :test do
