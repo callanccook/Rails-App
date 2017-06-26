@@ -1,15 +1,17 @@
 <div class="col-sm-6 col-md-4 col-lg-3 product-information">
-  <%= image_tag(product.image_url, :class => "product-image img-responsive img-rounded img-zoom") %>
-  <a><h3><%= link_to product.name, product, class: 'product-name' %></h3></a>
-  <p class="description" maxlength="100"><%= product.description %></p>
-  <p><%= product.color %></p>
-  <p><%= number_to_currency(product.price) %></p>
-  <br>
+  <% cache product do %>
+    <%= image_tag(product.image_url, :class => "product-image img-responsive img-rounded img-zoom") %>
+    <a><h3><%= link_to product.name, product, class: 'product-name' %></h3></a>
+    <p class="description" maxlength="100"><%= product.description %></p>
+    <p><%= product.color %></p>
+    <p><%= number_to_currency(product.price) %></p>
+    <br>
 
-  <% if signed_in? && current_user.admin? %>
-  	<a><%= link_to 'Show', product %></a>
-  	<a><%= link_to 'Edit', edit_product_path(product) %></a>
-  	<a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+    <% if signed_in? && current_user.admin? %>
+    	<a><%= link_to 'Show', product %></a>
+    	<a><%= link_to 'Edit', edit_product_path(product) %></a>
+    	<a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+    <% end %>
   <% end %>
   
 </div>

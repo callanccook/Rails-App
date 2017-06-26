@@ -1,56 +1,55 @@
-
-
 <div class="container">
-  
-  <div class="row" id="product-show">
-    <div class="col-md-4">
-      <h3 id="product-name"><strong><%= @product.name %></strong></h3>
-      <p>
-        <strong>Description:</strong>
-        <%= @product.description %>
-      </p>
-      <p>
-        <strong>Color:</strong>
-        <%= @product.color %>
-      </p>
-      <p>
-        <strong>Price:</strong>
-        <%= number_to_currency(@product.price) %>
-      </p>
-
-
-      <% if @comments.exists? %>
-        <p class="average-rating">
-          <strong>Average Rating:</strong>
-          <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
+  <% cache @product do %>
+    
+    <div class="row" id="product-show">
+      <div class="col-md-4">
+        <h3 id="product-name"><strong><%= @product.name %></strong></h3>
+        <p>
+          <strong>Description:</strong>
+          <%= @product.description %>
         </p>
-      <% else %>
-        <p>This product has not yet been rated.</p>
-      <% end %>
+        <p>
+          <strong>Color:</strong>
+          <%= @product.color %>
+        </p>
+        <p>
+          <strong>Price:</strong>
+          <%= number_to_currency(@product.price) %>
+        </p>
 
-      <%= form_tag "/payments/create" do %>
-        <%= render partial: "shared/stripe_checkout_button" %>
-      <% end %>
-    </div><!-- end col-md-4 -->
+
+        <% if @comments.exists? %>
+          <p class="average-rating">
+            <strong>Average Rating:</strong>
+            <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
+          </p>
+        <% else %>
+          <p>This product has not yet been rated.</p>
+        <% end %>
+
+        <%= form_tag "/payments/create" do %>
+          <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
+      </div><!-- end col-md-4 -->
 
 
-    <div class="col-md-6" id="product-image-show">
-       <%= image_tag(@product.image_url, width: '450', class: 'img-responsive img-rounded img-zoom', data_zoom_image: '@product.image_url') %>
-    </div><!-- end col-md-8 -->
-  </div><!-- end row -->
+      <div class="col-md-6" id="product-image-show">
+         <%= image_tag(@product.image_url, width: '450', class: 'img-responsive img-rounded img-zoom', data_zoom_image: '@product.image_url') %>
+      </div><!-- end col-md-8 -->
+    </div><!-- end row -->
 
-  <%= render 'new_comment' %>
+    <%= render 'new_comment' %>
 
-  <%= render 'comments' %>
+    <%= render 'comments' %>
 
-  <%= javascript_include_tag 'ratyrate.js', "data-turbolinks-track" => false %>
-  
-  <%= will_paginate @comments, class: "pagination" %>
-  
-  <div class="row" id="edit-back">
-    <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
-  </div>
+    <%= javascript_include_tag 'ratyrate.js', "data-turbolinks-track" => false %>
+    
+    <%= will_paginate @comments, class: "pagination" %>
+    
+    <div class="row" id="edit-back">
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
+    </div>
    
-
+  <% end %>
 </div><!-- end container -->
