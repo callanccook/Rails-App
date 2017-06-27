@@ -40,6 +40,8 @@
 
     <%= render 'new_comment' %>
 
+    <div class="alert alert-info alert-dismissible" style="display:none" role="alert" data-dismiss="alert">A new comment was posted!</div>
+
     <%= render 'comments' %>
 
     <%= javascript_include_tag 'ratyrate.js', "data-turbolinks-track" => false %>
