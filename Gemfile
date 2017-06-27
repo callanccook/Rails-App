@@ -44,6 +44,8 @@ gem 'stripe'
 gem 'brakeman', '~> 3.6', '>= 3.6.2'
 # gem dalli for chache
 gem 'dalli'
+# gem redis
+gem 'redis-rails'
 
 
 group :development, :test do
