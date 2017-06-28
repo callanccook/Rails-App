@@ -1,7 +1,7 @@
 <div class="container">
   <% cache @product do %>
     
-    <div class="row" id="product-show">
+    <div class="row" id="product-show" data-product-id="<%= @product.id %>">
       <div class="col-md-4">
         <h3 id="product-name"><strong><%= @product.name %></strong></h3>
         <p>
