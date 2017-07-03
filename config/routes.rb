@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/products', to: 'products#index' , :as => 'products_page'
 
-  get '/oders', to: 'orders#index', :as => 'orders_page'
+  get '/orders', to: 'orders#index', :as => 'orders_page'
 
   get 'static_pages/index'
 
