@@ -37,6 +37,7 @@
          <%= image_tag(@product.image_url, width: '450', class: 'img-responsive img-rounded img-zoom', data_zoom_image: '@product.image_url') %>
       </div><!-- end col-md-8 -->
     </div><!-- end row -->
+  <% end %>
 
     <%= render 'new_comment' %>
 
@@ -53,5 +54,5 @@
       <%= link_to 'Back', products_path %>
     </div>
    
-  <% end %>
+  
 </div><!-- end container -->
