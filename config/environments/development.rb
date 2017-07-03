@@ -57,5 +57,4 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   default_url_options
 
-  config.logger = ActiveSupport::Logger.new('/dev/null')
 end
