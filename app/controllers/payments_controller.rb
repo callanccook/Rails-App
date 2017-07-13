@@ -8,35 +8,33 @@ class PaymentsController < ApplicationController
 	  # Create the charge on Stripe's servers - this will charge the user's card
 
 	  # if statement here to sign in user
-	  # if @user signed_in
+	  if signed_in?
+		  begin
+		    charge = Stripe::Charge.create(
+		      amount: (@product.price * 100).to_i, # amount in cents, again
+		      currency: "usd",
+		      source: token,
+		      description: params[:stripeEmail]
+		    )
 
+		    if charge.paid
+		    	Order.create(
+		    		product_id: @product.id,
+		    		user_id: @user.id,
+		    		total: @product.price,
+		    		)
+		    	flash[:notice] = "Your payment was processed successfully."
+		    end
 
-	  begin
-	    charge = Stripe::Charge.create(
-	      amount: (@product.price * 100).to_i, # amount in cents, again
-	      currency: "usd",
-	      source: token,
-	      description: params[:stripeEmail]
-	    )
-
-	    if charge.paid
-	    	Order.create(
-	    		product_id: @product.id,
-	    		user_id: @user.id,
-	    		total: @product.price,
-	    		)
-	    	flash[:notice] = "Your payment was processed successfully."
-	    end
-
-	  rescue Stripe::CardError => e
-	    # The card has been declined
-	    body = e.json_body
-    	err = body[:error]
-    	flash[:notice] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
+		  rescue Stripe::CardError => e
+		    # The card has been declined
+		    body = e.json_body
+	    	err = body[:error]
+	    	flash[:notice] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
+		  end
+	  else 
+	  	flash[:notice] = "You must be logged in to complete transaction."
 	  end
-	  #else 
-	  #flash must be logged in
-	  #end
 	  redirect_to product_path(@product)
 
 	end
